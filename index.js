@@ -22,7 +22,7 @@ console.log("isAlmostSame(0.1 + 0.2, 0.3)", isAlmostSame(0.1 + 0.2, 0.3)); // В
 // Задача 3: Напишіть функцію, яка перевіряє, чи є число безпечним цілим числом
 
 function isSafeInteger(num) {
-  return Number.MIN_SAFE_INTEGER <= num && num <= Number.MAX_SAFE_INTEGER;
+  return num >= Number.MIN_SAFE_INTEGER && num <= Number.MAX_SAFE_INTEGER;
   // Перевіряємо, чи є число меншим або рівним MAX_SAFE_INTEGER і більшим або рівним MIN_SAFE_INTEGER
 }
 
